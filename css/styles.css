@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.rating__box {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: #1B222C;
+    width: 700px;
+    height: 700px;
+    border-radius: 50px;
+  }
+  
+.star__circle {
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    background: #273039;
+    border-radius: 50%;
+    left: 50px;
+    top: 50px;
+}  
+.star__circle img {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    pointer-events: none;
+    user-select: none;
+}
+
+.question__text {
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Overpass', sans-serif;
+    font-size: 3rem;
+    pointer-events: none;
+    user-select: none;
+    left: 50px;
+    top: 25%;
+}
+
+.question__description {
+    position: absolute;
+    color: hsl(216, 12%, 54%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.7rem;
+    pointer-events: none;
+    user-select: none;
+    left: 50px;
+    top: 37%;
+    line-height: 40px;
+}
+
+.rating_1, .rating_2, .rating_3, .rating_4, .rating_5 {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 62%;
+    color: #fff;
+    background: #273039;
+    border: none;
+    cursor: pointer;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.7rem;
+} 
+
+/* hover color hsl(217, 12%, 63%) */
+.rating_1:hover, .rating_2:hover, .rating_3:hover, .rating_4:hover, .rating_5:hover {
+    background: hsl(217, 12%, 63%);
+    transition: all 1s ease;
+} 
+
+.rating_1 {
+    left: 50px;
+}
+
+.rating_2 {
+    left: 175px;
+}
+
+.rating_3 {
+    left: 300px;
+}
+
+.rating_4 {
+    left: 425px;
+}
+
+.rating_5 {
+    left: 550px;
+}
+
+.submit {
+    position: absolute;
+    height: 80px;
+    width: 600px;
+    left: 40px;
+    border-radius: 50px;
+    bottom: 5%;
+    font-size: 1.5rem;
+    background: hsl(25, 97%, 53%);
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+
+.submit:hover {
+    color: hsl(25, 97%, 53%);
+    background: white;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
